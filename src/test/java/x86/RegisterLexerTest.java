@@ -51,7 +51,7 @@ public class RegisterLexerTest {
     ).collect(Collectors.toList());
 
     public static void main(String[] args) throws IOException {
-        String content = Files.readString(Path.of("rive/src/test/java/x86/asm/Test.asm"));
+        String content = Files.readString(Path.of("src/test/java/x86/asm/Test.asm"));
         String regex = "\\b(" + String.join("|", REGISTERS) + ")\\b";
         Matcher matcher = Pattern.compile(regex, Pattern.CASE_INSENSITIVE).matcher(content);
 

@@ -9,7 +9,7 @@ public class CodeTest {
     public static void main(String[] args) {
         try {
             Field[] fields = Code.class.getDeclaredFields();
-            Map<Integer, String> idToName = new TreeMap<>(); // Automatically sorted by ID
+            Map<Integer, String> idToName = new TreeMap<>();
 
             for (Field field : fields) {
                 if (field.getType() == int.class) {
