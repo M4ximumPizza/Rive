@@ -11,7 +11,7 @@ import mi.m4x.rive.constants.Constants;
  * under a consistent abstraction.
  *
  * @author M4ximumpizza
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  */
 @Beta
 public class RegisterInformation {

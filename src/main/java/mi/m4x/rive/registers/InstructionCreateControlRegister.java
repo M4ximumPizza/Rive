@@ -12,7 +12,7 @@ import mi.m4x.carbide.interfaces.Beta;
  *
  * <p>This class is non-instantiable and is used solely as a holder for static constants.</p>
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

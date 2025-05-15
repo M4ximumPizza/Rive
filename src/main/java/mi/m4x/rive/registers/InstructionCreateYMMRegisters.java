@@ -14,7 +14,7 @@ import mi.m4x.carbide.interfaces.Beta;
  * {@link InstructionCreateRegister} instances corresponding to the YMM register set.
  * It is not meant to be instantiated.</p>
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

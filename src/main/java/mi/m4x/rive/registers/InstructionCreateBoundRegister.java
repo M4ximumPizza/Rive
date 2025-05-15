@@ -8,7 +8,7 @@ import mi.m4x.carbide.interfaces.Beta;
  * on pointers at runtime. The class prevents instantiation to ensure it is used solely as a container for
  * these static register instances.
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

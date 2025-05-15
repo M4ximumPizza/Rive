@@ -3,7 +3,7 @@ package mi.m4x.rive.registers;
 import mi.m4x.carbide.interfaces.Beta;
 
 /**
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

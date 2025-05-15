@@ -13,7 +13,7 @@ import mi.m4x.carbide.interfaces.Beta;
  * <p>This class acts as a utility container for referencing {@link InstructionCreateRegister}
  * instances for AVX-512 k-registers, and is not intended to be instantiated.</p>
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

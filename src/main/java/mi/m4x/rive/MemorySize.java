@@ -10,7 +10,7 @@ import mi.m4x.rive.constants.Constants;
  *
  * This class is not intended to be instantiated directly.
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

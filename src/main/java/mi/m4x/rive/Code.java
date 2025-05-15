@@ -16,7 +16,7 @@ import mi.m4x.carbide.interfaces.Beta;
  * <p>Note: The constants are not exhaustive and may not cover all
  * possible instructions or operations in the x86/x86-64 architecture.</p>
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 

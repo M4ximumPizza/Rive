@@ -9,7 +9,7 @@ import mi.m4x.carbide.interfaces.Beta;
  * <p>Used in contexts where virtual registers are dynamically allocated or referenced.
  *
  * @author M4ximumpizza
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  */
 @Beta
 public final class InstructionCreateRegister {

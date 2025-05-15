@@ -5,12 +5,12 @@ plugins {
 }
 
 group = 'mi.m4x.rive'
-version = '1.0a-SNAPSHOT'
+version = '1.0a'
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    implementation 'com.github.M4ximumPizza:Carbide:1.0.1'
+    implementation 'com.github.M4ximumPizza:Carbide:1.0.2'
 }
 
 test {

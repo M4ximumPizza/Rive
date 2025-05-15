@@ -12,7 +12,7 @@ import mi.m4x.carbide.interfaces.Beta;
  * {@link InstructionCreateRegister} representation of an XMM register.
  * It is not intended to be instantiated.</p>
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

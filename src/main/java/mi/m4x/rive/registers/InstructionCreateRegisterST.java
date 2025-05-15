@@ -12,7 +12,7 @@ import mi.m4x.carbide.interfaces.Beta;
  * <p>This class serves as a utility container for referencing {@link InstructionCreateRegister}
  * instances corresponding to each of the x87 FPU stack registers. It is not intended to be instantiated.</p>
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

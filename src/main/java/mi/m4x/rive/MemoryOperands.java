@@ -12,7 +12,7 @@ import mi.m4x.rive.registers.InstructionCreateRegister;
  * fast hashing and equality checks.
  * </p>
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta

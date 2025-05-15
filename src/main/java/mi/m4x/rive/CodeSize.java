@@ -15,7 +15,7 @@ package mi.m4x.rive;
  * <p>These constants can be used in various contexts where code size needs to be specified or checked.</p>
  *
  * @author M4ximumpizza
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  */
 public class CodeSize {
     private CodeSize() {

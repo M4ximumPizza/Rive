@@ -9,7 +9,7 @@ import mi.m4x.carbide.interfaces.Beta;
  * as used in SSE, AVX, and AVX-512 instruction sets respectively.
  * It is intended for low-level instruction composition and should not be instantiated.</p>
  *
- * @since 1.0a-SNAPSHOT
+ * @since 1.0a
  * @author M4ximumpizza
  */
 @Beta
