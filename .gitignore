@@ -13,6 +13,9 @@
 #.idea
 .idea
 
+#.gradle
+.gradle
+
 #Build files
 build/
 
