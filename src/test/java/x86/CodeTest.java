@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 import java.util.*;
 
 public class CodeTest {
-    public static void main(String[] args) {
+    public static void run() {
         try {
             Field[] fields = Code.class.getDeclaredFields();
             Map<Integer, String> idToName = new TreeMap<>();
