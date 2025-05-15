@@ -50,7 +50,7 @@ public class RegisterLexerTest {
             "TMM0","TMM1","TMM2","TMM3","TMM4","TMM5","TMM6","TMM7"
     ).collect(Collectors.toList());
 
-    public static void main(String[] args) throws IOException {
+    public static void run() throws IOException {
         String content = Files.readString(Path.of("src/test/java/x86/asm/Test.asm"));
         String regex = "\\b(" + String.join("|", REGISTERS) + ")\\b";
         Matcher matcher = Pattern.compile(regex, Pattern.CASE_INSENSITIVE).matcher(content);

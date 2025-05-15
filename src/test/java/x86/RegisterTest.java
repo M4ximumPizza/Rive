@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 import java.util.*;
 
 public class RegisterTest {
-    public static void main(String[] args) {
+    public static void run() {
         try {
             // Get all declared fields in the Register class
             Field[] fields = Register.class.getDeclaredFields();
