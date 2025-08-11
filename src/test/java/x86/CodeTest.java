@@ -7,33 +7,32 @@ import java.util.*;
 
 public class CodeTest {
     public static void run() {
+        Map<Integer, String> idToName = new TreeMap<>();
         try {
-            Field[] fields = Code.class.getDeclaredFields();
-            Map<Integer, String> idToName = new TreeMap<>();
-
-            for (Field field : fields) {
+            for (Field field : Code.class.getDeclaredFields()) {
                 if (field.getType() == int.class) {
                     field.setAccessible(true);
                     int value = field.getInt(null);
                     idToName.put(value, field.getName());
                 }
             }
-
-            System.out.println("Total int fields: " + idToName.size());
-
-            int expected = -1;
-            for (Map.Entry<Integer, String> entry : idToName.entrySet()) {
-                int actual = entry.getKey();
-                if (expected == -1) {
-                    expected = actual;
-                } else if (actual != expected + 1) {
-                    System.err.println("Gap or disorder detected between ID " + expected + " and " + actual);
-                }
-                System.out.println("Name: " + entry.getValue() + ", ID: " + actual);
-                expected = actual;
-            }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
+            return;
+        }
+
+        System.out.println("Total int fields: " + idToName.size());
+
+        Integer previousId = null;
+        for (Map.Entry<Integer, String> entry : idToName.entrySet()) {
+            int currentId = entry.getKey();
+
+            if (previousId != null && currentId != previousId + 1) {
+                System.out.println("Missing ID(s) between " + previousId + " and " + currentId);
+            }
+
+            System.out.println("Name: " + entry.getValue() + ", ID: " + currentId);
+            previousId = currentId;
         }
     }
 }
