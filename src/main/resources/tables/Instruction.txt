@@ -1,0 +1,33 @@
+Invalid:
+INSTRUCTION: <invalid> | <invalid> | INTEL8086
+    mnemoic: <invalid>
+
+DeclareByte:
+INSTRUCTION: <db> | <db> | INTEL8086
+    mnemoic: <db>
+    code-mnemonic: DeclareByte
+    flags: no-instr cflow=ex asm-ig
+
+DeclareWord:
+INSTRUCTION: <dw> | <dw> | INTEL8086
+    mnemoic: <dw>
+    code-mnemonic: DeclareWord
+    flags: no-instr cflow=ex asm-ig
+
+DeclareDWord:
+INSTRUCTION: <dd> | <dd> | INTEL8086
+    mnemoic: <dd>
+    code-mnemonic: DeclareDword
+    flags: no-instr cflow=ex asm-ig
+
+DeclareQWord:
+INSTRUCTION: <dq> | <dq> | INTEL8086
+    mnemoic: <dq>
+    code-mnemonic: DeclareQword
+    flags: no-instr cflow=ex asm-ig
+
+Add_rm8_r8:
+INSTRUCTION: 00 /r | ADD r/m8, r8 | INTEL8086
+  ops: rw=rm r=reg | UInt8
+  rflags: w=oszacp
+  flags: lock xacquire xrelease
