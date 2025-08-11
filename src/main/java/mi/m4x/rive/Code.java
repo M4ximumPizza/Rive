@@ -91,6 +91,45 @@ public class Code {
      */
     public static final int ADD_RM64_R64;
 
+    /**
+     * Represents the {@code ADD r8, r/m8} instruction.<br>
+     * Opcode: {@code 02 /r}.<br>
+     * Available from Intel 8086 and later processors.<br>
+     * Operates on 8-bit operands (byte-sized) in 16-, 32-, and 64-bit modes.<br>
+     * Adds the 8-bit value in the source register/memory to the 8-bit destination register, storing the result in the register.<br>
+     * Updates Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P) flags.
+     */
+    public static final int ADD_R8_RM8;
+
+    /**
+     * Represents the {@code ADD r16, r/m16} instruction.<br>
+     * Opcode: {@code o16 03 /r} (operand-size prefix for 16-bit operands).<br>
+     * Available from Intel 8086 and later processors.<br>
+     * Operates on 16-bit operands in 16-, 32-, and 64-bit modes.<br>
+     * Adds the 16-bit value in the source register/memory to the 16-bit destination register, storing the result in the register.<br>
+     * Updates Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P) flags.
+     */
+    public static final int ADD_R16_RM16;
+
+    /**
+     * Represents the {@code ADD r32, r/m32} instruction.<br>
+     * Opcode: {@code o32 03 /r} (operand-size prefix for 32-bit operands).<br>
+     * Available from Intel 386 and later processors.<br>
+     * Operates on 32-bit operands in 16-, 32-, and 64-bit modes.<br>
+     * Adds the 32-bit value in the source register/memory to the 32-bit destination register, storing the result in the register.<br>
+     * Updates Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P) flags.
+     */
+    public static final int ADD_R32_RM32;
+
+    /**
+     * Represents the {@code ADD r64, r/m64} instruction.<br>
+     * Opcode: {@code o64 03 /r} (operand-size prefix for 64-bit operands).<br>
+     * Available on x86-64 (64-bit mode) processors.<br>
+     * Operates on 64-bit operands.<br>
+     * Adds the 64-bit value in the source register/memory to the 64-bit destination register, storing the result in the register.<br>
+     * Updates Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P) flags.
+     */
+    public static final int ADD_R64_RM64;
 
     static {
         int i = 0;
@@ -103,5 +142,9 @@ public class Code {
         ADD_RM16_R16 = i++;
         ADD_RM32_R32 = i++;
         ADD_RM64_R64 = i++;
+        ADD_R8_RM8 = i++;
+        ADD_R16_RM16 = i++;
+        ADD_R32_RM32 = i++;
+        ADD_R64_RM64 = i++;
     }
 }
