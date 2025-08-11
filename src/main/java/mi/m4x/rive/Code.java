@@ -1,7 +1,10 @@
 package mi.m4x.rive;
 
 /**
- * Represents a set of instruction codes in the x86/64 architecture.
+ * This class contains constants representing various assembly instructions and directives.
+ *
+ * @since 1.0.0a
+ * @author M4ximumpizza
  */
 public class Code {
 
