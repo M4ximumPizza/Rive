@@ -43,3 +43,33 @@ INSTRUCTION: o32 01 /r | ADD r/m32, r32 | INTEL386
   ops: rw=rm r=reg | UInt32
   rflags: w=oszacp
   flags: lock xacquire xrelease
+
+Add_rm64_r64:
+INSTRUCTION: o64 01 /r | ADD r/m64, r64 | INTELAMD64
+  ops: rw=rm r=reg | UInt64
+  rflags: w=oszacp
+  flags: lock xacquire xrelease
+
+Add_r8_rm8:
+INSTRUCTION: 02 /r | ADD r8, r/m8 | INTEL8086
+  ops: rw=reg r=rm | UInt8
+  rflags: w=oszacp
+  flags: lock xacquire xrelease
+
+Add_r16_rm16:
+INSTRUCTION: o16 03 /r | ADD r16, r/m16 | INTEL8086
+  ops: rw=reg r=rm | UInt16
+  rflags: w=oszacp
+  flags: lock xacquire xrelease
+
+Add_r32_rm32:
+INSTRUCTION: o32 03 /r | ADD r32, r/m32 | INTEL386
+  ops: rw=reg r=rm | UInt32
+  rflags: w=oszacp
+  flags: lock xacquire xrelease
+
+Add_r64_rm64:
+INSTRUCTION: o64 03 /r | ADD r64, r/m64 | INTELAMD64
+  ops: rw=reg r=rm | UInt64
+  rflags: w=oszacp
+  flags: lock xacquire xrelease
