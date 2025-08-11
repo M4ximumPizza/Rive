@@ -1,11 +1,15 @@
 package mi.m4x.rive;
 
+import mi.m4x.carbide.interfaces.Beta;
+
 /**
  * This class contains constants representing various assembly instructions and directives.
  *
  * @since 1.0.0a
  * @author M4ximumpizza
  */
+
+@Beta()
 public class Code {
 
     private Code() {
