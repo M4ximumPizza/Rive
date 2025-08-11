@@ -46,13 +46,26 @@ public class Code {
     public static final int DECLAREQWORD;
 
     /**
-     * Represents the {@code ADD r/m8, r8} instruction. <br>
-     * Opcode: {@code 00 /r} <br>
-     * Available from Intel8086 and later processors. <br>
-     * Operates on 8 bit operands (byte-sized). <br>
-     * Supports 16-, 32-, and 64-bit modes with appropriate operand-size prefixes. <br>
+     * Represents the {@code ADD r/m8, r8} instruction.<br>
+     * Opcode: {@code 00 /r}.<br>
+     * Available from Intel 8086 and later processors.<br>
+     * Operates on 8-bit operands (byte-sized) in 16-, 32-, and 64-bit modes.<br>
+     * Adds the 8-bit value in the source register to the 8-bit value in the destination register or memory,
+     * storing the result in the destination.<br>
+     * Updates the following flags: Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P).<br>
+     * Supports {@code LOCK}, {@code XACQUIRE}, and {@code XRELEASE} prefixes for atomic memory operations.<br>
      */
     public static final int ADD_RM8_R8;
+
+    /**
+     * Represents the {@code ADD r/m16, r16} instruction. <br>
+     * Opcode: {@code o16 01 /r} {operand-size over prefix for 16-bit operands}. <br>
+     * Available since Intel 8086 processors. <br>
+     * Operates on 16-bit operands in 16-, 32- and 64-bit modes. <br>
+     * Updates the following flags: Overflow, Sign, Zero, Auxiliary Carry, Carry, and parity. <br>
+     * Supports {@code LOCK}, {@code XACQUIRE}, and {@code XRELEASE} prefixes for atomic operations.
+     */
+    public static final int ADD_RM16_R16;
 
     static {
         int i = 0;
@@ -62,6 +75,7 @@ public class Code {
         DECLAREDWORD = i++;
         DECLAREQWORD = i++;
         ADD_RM8_R8 = i++;
+        ADD_RM16_R16 = i++;
     }
 
 }
