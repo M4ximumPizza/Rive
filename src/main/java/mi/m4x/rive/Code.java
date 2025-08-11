@@ -67,6 +67,31 @@ public class Code {
      */
     public static final int ADD_RM16_R16;
 
+    /**
+     * Represents the {@code ADD r/m32, r32} instruction.<br>
+     * Opcode: {@code o32 01 /r} (operand-size prefix for 32-bit operands).<br>
+     * Available from Intel 386 and later processors.<br>
+     * Operates on 32-bit operands in 16-, 32-, and 64-bit modes (requires operand-size prefix in some modes).<br>
+     * Adds the 32-bit value in the source register to the 32-bit value in the destination register or memory,
+     * storing the result in the destination.<br>
+     * Updates the following flags: Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P).<br>
+     * Supports {@code LOCK}, {@code XACQUIRE}, and {@code XRELEASE} prefixes for atomic memory operations.<br>
+     */
+    public static final int ADD_RM32_R32;
+
+    /**
+     * Represents the {@code ADD r/m64, r64} instruction.<br>
+     * Opcode: {@code o64 01 /r} (operand-size prefix for 64-bit operands).<br>
+     * Available on x86-64 (64-bit mode) processors.<br>
+     * Operates on 64-bit operands.<br>
+     * Adds the 64-bit value in the source register to the 64-bit value in the destination register or memory,
+     * storing the result in the destination.<br>
+     * Updates the following flags: Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P).<br>
+     * Supports {@code LOCK}, {@code XACQUIRE}, and {@code XRELEASE} prefixes for atomic memory operations.<br>
+     */
+    public static final int ADD_RM64_R64;
+
+
     static {
         int i = 0;
         INVALID = i++;
@@ -76,6 +101,7 @@ public class Code {
         DECLAREQWORD = i++;
         ADD_RM8_R8 = i++;
         ADD_RM16_R16 = i++;
+        ADD_RM32_R32 = i++;
+        ADD_RM64_R64 = i++;
     }
-
 }
