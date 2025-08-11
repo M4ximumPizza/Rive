@@ -131,6 +131,42 @@ public class Code {
      */
     public static final int ADD_R64_RM64;
 
+    /**
+     * Represents the {@code ADD AL, imm8} instruction.<br>
+     * Opcode: {@code 04 ib}.<br>
+     * Available from Intel 8086 and later processors.<br>
+     * Adds an 8-bit immediate value to the 8-bit AL register, storing the result in AL.<br>
+     * Updates Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P) flags.
+     */
+    public static final int ADD_AL_IMM8;
+
+    /**
+     * Represents the {@code ADD AX, imm16} instruction.<br>
+     * Opcode: {@code o16 05 iw} (operand-size prefix for 16-bit operands).<br>
+     * Available from Intel 8086 and later processors.<br>
+     * Adds a 16-bit immediate value to the 16-bit AX register, storing the result in AX.<br>
+     * Updates Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P) flags.
+     */
+    public static final int ADD_AX_IMM16;
+
+    /**
+     * Represents the {@code ADD EAX, imm32} instruction.<br>
+     * Opcode: {@code o32 05 id} (operand-size prefix for 32-bit operands).<br>
+     * Available from Intel 386 and later processors.<br>
+     * Adds a 32-bit immediate value to the 32-bit EAX register, storing the result in EAX.<br>
+     * Updates Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P) flags.
+     */
+    public static final int ADD_EAX_IMM32;
+
+    /**
+     * Represents the {@code ADD RAX, imm32} instruction.<br>
+     * Opcode: {@code o64 05 id} (operand-size prefix for 64-bit operands).<br>
+     * Available on x86-64 (64-bit mode) processors.<br>
+     * Adds a 32-bit immediate value to the 64-bit RAX register, storing the result in RAX.<br>
+     * Updates Overflow (O), Sign (S), Zero (Z), Auxiliary Carry (A), Carry (C), and Parity (P) flags.
+     */
+    public static final int ADD_RAX_IMM32;
+
     static {
         int i = 0;
         INVALID = i++;
@@ -146,5 +182,9 @@ public class Code {
         ADD_R16_RM16 = i++;
         ADD_R32_RM32 = i++;
         ADD_R64_RM64 = i++;
+        ADD_AL_IMM8 = i++;
+        ADD_AX_IMM16 = i++;
+        ADD_EAX_IMM32 = i++;
+        ADD_RAX_IMM32 = i++;
     }
 }

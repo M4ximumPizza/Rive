@@ -73,3 +73,24 @@ INSTRUCTION: o64 03 /r | ADD r64, r/m64 | INTELAMD64
   ops: rw=reg r=rm | UInt64
   rflags: w=oszacp
   flags: lock xacquire xrelease
+
+Add_Al_imm8:
+INSTRUCTION: 04 ib | ADD AL, imm8 | INTEL8086
+	ops: rw=r:al r=imm
+	rflags: w=oszacp
+
+Add_AX_imm16:
+INSTRUCTION: o16 05 iw | ADD AX, imm16 | INTEL8086
+    ops: rw=r:ax r=imm
+    rflags: w=oszacp
+
+Add_EAX_imm32:
+INSTRUCTION: o32 05 id | ADD EAX, imm32 | INTEL386
+    ops: rw=r:eax r=imm
+    rflags: w=oszacp
+
+Add_RAX_imm32:
+INSTRUCTION: o64 05 id | ADD RAX, imm32 | X64
+	ops: rw=r:rax r=imm;64
+	rflags: w=oszacp
+	flags: 64
